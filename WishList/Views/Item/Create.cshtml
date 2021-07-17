@@ -1,0 +1,11 @@
+﻿@using WishList.Models;
+
+<h3>Add item to wishlist</h3>
+<form asp-action="create">
+    <input asp-for="Description"/>
+    <span asp-validation-for="Description"></span>
+    <button type="submit">Add Item</button>
+</form>
+Inside the form tag, create an input tag with the attribute asp-for set to "Description".
+After the input tag, create a span tag with the attribute asp-validation-for set to "Description".
+After the span tag, create a button tag with the attribute type set to "submit" and the text Add Item.
